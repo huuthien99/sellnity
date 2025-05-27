@@ -66,7 +66,7 @@ In case of technical difficulties, candidate may describe how the problem should
 
 ## A1: Layout Implementation
 
-Implement 3 Figma Screens into CSS, HTML using TailwindCSS / ShaDN
+- Implement 3 Figma Screens into CSS, HTML using TailwindCSS / ShaDN: [Design](https://www.figma.com/design/LM6tzSajnXW4EemOCoKfAI/Recruitment-05--2025?node-id=0-1&p=f)
 
 ## A2: JSON form rendering components
 
