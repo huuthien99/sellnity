@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import Header from "@/components/header/Index";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Navbar } from "@/components/navbar";
 
 const geistSans = Geist({
@@ -37,9 +36,8 @@ export default function RootLayout({
           <div className="flex min-h-screen w-full">
             <Navbar />
             <div className="w-full ">
-              <Header />
-              <div className="m-2.5 p-2.5 rounded-[3px] bg-amber-50  min-h-[calc(100%-80px)]">
-                {children}
+              <div className="pt-[22px] pl-[22px] pr-[17px]">
+                <SidebarTrigger className="cursor-pointer" /> {children}
               </div>
             </div>
           </div>

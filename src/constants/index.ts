@@ -1,19 +1,24 @@
-import { Laptop, ReceiptTextIcon } from "lucide-react";
+import { Estimator, Inquiry, Overview, Project } from "@/components/icons";
 
 export const MenuItem = [
   {
-    title: "Sản phẩm",
+    title: "Overview",
     url: "/",
-    icon: Laptop,
+    icon: Overview,
   },
   {
-    title: "Đơn hàng",
-    url: "/orders",
-    icon: ReceiptTextIcon,
+    title: "Inquiries",
+    url: "/inquiries",
+    icon: Inquiry,
   },
   {
-    title: "Cửa hàng",
-    url: "/shop",
-    icon: Laptop,
+    title: "Estimator",
+    url: "/estimator",
+    icon: Estimator,
+  },
+  {
+    title: "Projects",
+    url: "/projects",
+    icon: Project,
   },
 ];
