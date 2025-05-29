@@ -1,10 +1,5 @@
-import FormSearch from "@/components/form-search/FormSearch";
+import ContainerWrap from "@/components/common/ContainerWrap";
 
 export default function Home() {
-  return (
-    <>
-      <FormSearch>Form Search</FormSearch>
-      table
-    </>
-  );
+  return <ContainerWrap>Overview</ContainerWrap>;
 }
