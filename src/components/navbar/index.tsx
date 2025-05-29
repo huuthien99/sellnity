@@ -5,6 +5,8 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -30,7 +32,7 @@ export function Navbar() {
     return false;
   };
 
-  const { open } = useSidebar();
+  const { open, toggleSidebar } = useSidebar();
 
   return (
     <Sidebar
@@ -38,26 +40,33 @@ export function Navbar() {
       bgColorSidebar="bg-[#F1F1F1] shadow-[1px_1px_20px_-5px_#00000040] border-0"
       className=" group-data-[side=left]:border-0"
     >
-      {/* <SidebarHeader className="h-[60px]">
-        <SidebarGroupLabel
-          className={cn(
-            "flex justify-between h-[100%]",
-            "group-data-[collapsible=icon]:mt-0 group-data-[collapsible=icon]:p-0 group-data-[collapsible=icon]:opacity-[1]"
-          )}
-        >
-          <p
-            className={cn(
-              "group-data-[collapsible=icon]:hidden",
-              "font-bold text-[18px]"
-            )}
+      <SidebarHeader className="pt-6.5 pl-4 mb-10">
+        {open ? (
+          <div
+            onClick={toggleSidebar}
+            className="flex items-center gap-4 cursor-pointer"
           >
-            SELLNITY
-          </p>
-          <SidebarTrigger className="cursor-pointer" />
-        </SidebarGroupLabel>
-      </SidebarHeader> */}
+            <Image src={"/logo-header.png"} alt="logo" width={48} height={48} />
+            <SidebarGroupLabel className="flex flex-col items-baseline px-0 ">
+              <p className="text-[20px] font-semibold text-[#005B86]">
+                ABC Company
+              </p>
+              <p className="text-[14px] text-[#005B86]">Lisa Rose</p>
+            </SidebarGroupLabel>
+          </div>
+        ) : (
+          <Image
+            onClick={toggleSidebar}
+            src={"/logo-header.png"}
+            alt="logo"
+            width={48}
+            height={48}
+            className="cursor-pointer"
+          />
+        )}
+      </SidebarHeader>
       <SidebarContent>
-        <SidebarGroup>
+        <SidebarGroup className="pl-4.5">
           <SidebarGroupContent>
             <SidebarMenu>
               {MenuItem.map((item) => (
@@ -67,13 +76,11 @@ export function Navbar() {
                     isActive={isActive(item.url)}
                     asChild
                   >
-                    <Link className={open ? "" : "ml-[18px]"} href={item.url}>
+                    <Link href={item.url}>
                       <item.icon
                         color={isActive(item.url) ? "#005B86" : "#7C7C7C"}
                       />
-                      <span className={open ? "" : "sr-only"}>
-                        {item.title}
-                      </span>
+                      <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -84,7 +91,7 @@ export function Navbar() {
       </SidebarContent>
 
       <SidebarFooter className="p-0">
-        <SidebarGroup>
+        <SidebarGroup className="pl-4.5">
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem className="h-10">
@@ -92,11 +99,9 @@ export function Navbar() {
                   className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-[#7C7C7C] data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-[#005B86] gap-6"
                   asChild
                 >
-                  <Link className={open ? "" : "ml-[18px]"} href={""}>
+                  <Link href={""}>
                     <Administrations />
-                    <span className={open ? "" : "sr-only"}>
-                      Administrations
-                    </span>
+                    <span>Administrations</span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -105,16 +110,16 @@ export function Navbar() {
                   className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-[#7C7C7C] data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-[#005B86] gap-6"
                   asChild
                 >
-                  <Link className={open ? "" : "ml-[18px]"} href={""}>
+                  <Link href={""}>
                     <Documentation />
-                    <span className={open ? "" : "sr-only"}>Documentation</span>
+                    <span>Documentation</span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
-              <SidebarMenuItem className="h-12 pt-[13px] mb-[27px] ">
+              <SidebarMenuItem className="h-12 pt-[13px] mb-[27px]">
                 <SidebarMenuButton
-                  className="gap-6 group-data-[collapsible=icon]:ml-[16px]
+                  className="gap-6
                   group-data-[collapsible=icon]:[&>svg]:sr-only
                   group-data-[collapsible=icon]:[&>img]:size-10
                   pl-0
