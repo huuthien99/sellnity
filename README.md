@@ -1,48 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-=======
->>>>>>> 0a88481 (change)
 # Junior Front-end Engineer Assignment - May 2025
 
-* Copyright (c) River Flow Solutions, Jsc. 2025. All rights reserved.
-* We only use the submissions for candidates evaluation.
+- Copyright (c) River Flow Solutions, Jsc. 2025. All rights reserved.
+- We only use the submissions for candidates evaluation.
 
 ## Assignment List
 
@@ -63,7 +22,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 Candidate must fork this repository to a public repo under their name for submission.
 
-Each candidate must implement at least 2 assignments out of 3 from the list. 
+Each candidate must implement at least 2 assignments out of 3 from the list.
 
 In case of technical difficulties, candidate may describe how the problem should be resolved in NARRATION.md. However, executable code is always preferrable.
 
@@ -75,6 +34,7 @@ In case of technical difficulties, candidate may describe how the problem should
 
 - Implement a component that receive [JSON Schemas](https://json-schema.org/) input (via a text box) and render HTML forms.
 - Implement a custom input component (embedded within the JSON schema renderer) to input new Vietnamese address field (output data is a single text field) with following input layout:
+
   ```
   [Tỉnh / Thành phố]
   [Phường / Xã]
@@ -82,6 +42,7 @@ In case of technical difficulties, candidate may describe how the problem should
 
   NOTE: danh sách phường xã cần được cập nhật theo Tỉnh / Thành phố được lựa chọn (có thể dùng data sample, không cần chính xác với thực tế)
   ```
+
 - Match the form looks and feel with the UI framework of choice (ShaDN / TailwindCSS).
 - Form content is saved to the state store and persist across page refreshes.
 - There should be a reset action to reset the data in the store.
@@ -89,51 +50,8 @@ In case of technical difficulties, candidate may describe how the problem should
 ## A3: Paginated component
 
 Implement a component that render the [data](https://github.com/datablist/sample-csv-files?tab=readme-ov-file) as paginated tables.
+
 - Data can be converted into JSON before use.
-- Allow sorting and change sorting order by clicking the table header. 
+- Allow sorting and change sorting order by clicking the table header.
 - Allow filter by each columns values.
 - The current page & active filter must be saved to the state store and persist across page refreshes
-
-
-<<<<<<< HEAD
->>>>>>> 09db2fa (Initial commit)
-=======
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> b76afb3 (Initial commit from Create Next App)
->>>>>>> 0a88481 (change)
