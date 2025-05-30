@@ -51,7 +51,7 @@ export function Navbar() {
               <p className="text-[20px] font-semibold text-primary">
                 ABC Company
               </p>
-              <p className="text-[14px] text-primary">Lisa Rose</p>
+              <p className="text-primary">Lisa Rose</p>
             </SidebarGroupLabel>
           </div>
         ) : (

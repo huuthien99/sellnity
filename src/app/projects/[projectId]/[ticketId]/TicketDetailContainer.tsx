@@ -2,11 +2,21 @@
 import ContainerWrap from "@/components/common/ContainerWrap";
 import React from "react";
 
-function TicketDetailContainer({ children }: { children?: React.ReactNode }) {
+function TicketDetailContainer({
+  children,
+  className,
+}: {
+  children?: React.ReactNode;
+  className?: string;
+}) {
   const click = () => {
     alert("TicketDetailPage");
   };
-  return <ContainerWrap clickBadge={click}>{children}</ContainerWrap>;
+  return (
+    <ContainerWrap className={className} clickBadge={click}>
+      {children}
+    </ContainerWrap>
+  );
 }
 
 export default TicketDetailContainer;

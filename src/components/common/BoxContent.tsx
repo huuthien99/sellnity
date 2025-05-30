@@ -7,12 +7,14 @@ function BoxContent({
   icon,
   className,
   classNameParent,
+  iconRight,
 }: {
   children: React.ReactNode;
   title?: string;
   icon?: React.ReactNode;
   className?: string;
   classNameParent?: string;
+  iconRight?: React.ReactNode;
 }) {
   return (
     <div className={cn("flex flex-col gap-2", classNameParent)}>
@@ -24,6 +26,7 @@ function BoxContent({
       >
         {icon && <span className="icon">{icon}</span>}
         {title && <h3 className="title">{title}</h3>}
+        {iconRight && <span>{iconRight}</span>}
       </div>
       {children}
     </div>

@@ -5,11 +5,10 @@ import Ebook from "@/components/icons/Ebook";
 import Circle from "@/components/icons/Circle";
 import Content from "@/components/common/Content";
 
-// components/Timeline.tsx
-
 import { cn } from "@/lib/utils";
 import Clock from "@/components/icons/Clock";
 import TextAreaSubmit from "./TextAreaSubmit";
+import PropertiesComponent from "./PropertiesComponent";
 
 type TimelineItem = {
   type: "green" | "blue";
@@ -60,7 +59,7 @@ const Timeline = () => {
             <span className="absolute left-[10px] -bottom-[23px] border-l h-full border-[#6F6F6F]" />
           )}
 
-          <div className="flex gap-2 items-center text-[#6F6F6F] text-[14px] ml-10">
+          <div className="flex gap-2 items-center text-[#6F6F6F] ml-10">
             <p className="text-sm font-medium">
               <span className="font-semibold">{item.name}</span> {item.action}
             </p>
@@ -78,42 +77,46 @@ const Timeline = () => {
 function TicketDetailPage() {
   return (
     <TicketDetailContainer>
-      <BoxContent
-        icon={<Ebook />}
-        classNameParent="mb-[43px]"
-        title="Description"
-      >
-        <Content icon={<Circle />}>
-          <p className="text-secondary leading-[22px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </Content>
-        <Content icon={<Circle />}>
-          <p className="text-secondary leading-[22px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </Content>
-        <Content icon="+" className="[&>span:first-child]:text-primary">
-          <p className="text-primary cursor-pointer">Add sub-tickets</p>
-        </Content>
-      </BoxContent>
-
-      <BoxContent icon={<Ebook />} className="mb-[43px]" title="Activity">
-        <Timeline />
-        <TextAreaSubmit />
-      </BoxContent>
+      <div className="flex">
+        <div className="pr-[14px] w-[calc(100%-275px)]">
+          <BoxContent
+            icon={<Ebook />}
+            classNameParent="mb-[43px]"
+            title="Description"
+          >
+            <Content icon={<Circle />}>
+              <p className="text-secondary leading-[22px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </Content>
+            <Content icon={<Circle />}>
+              <p className="text-secondary leading-[22px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </Content>
+            <Content icon="+" className="[&>span:first-child]:text-primary">
+              <p className="text-primary cursor-pointer">Add sub-tickets</p>
+            </Content>
+          </BoxContent>
+          <BoxContent icon={<Ebook />} className="mb-[43px]" title="Activity">
+            <Timeline />
+            <TextAreaSubmit />
+          </BoxContent>
+        </div>
+        <PropertiesComponent />
+      </div>
     </TicketDetailContainer>
   );
 }
