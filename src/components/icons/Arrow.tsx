@@ -12,9 +12,9 @@ function Arrow() {
       <path
         d="M3.33325 7.99998H12.6666M12.6666 7.99998L7.99992 3.33331M12.6666 7.99998L7.99992 12.6666"
         stroke="#005B86"
-        stroke-width="1.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
