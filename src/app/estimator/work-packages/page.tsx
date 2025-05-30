@@ -2,6 +2,7 @@ import ContainerWrap from "@/components/common/ContainerWrap";
 import Category from "./Category";
 import WorkPackage from "./WorkPackage";
 import Footer from "./Footer";
+import { Suspense } from "react";
 
 function workPackagePage() {
   return (
@@ -11,9 +12,11 @@ function workPackagePage() {
           Work Packages (WP)
         </h6>
         <div className="flex gap-6">
-          <div className="w-50">
-            <Category />
-          </div>
+          <Suspense>
+            <div className="w-50">
+              <Category />
+            </div>
+          </Suspense>
           <div className="w-full">
             <WorkPackage />
           </div>
