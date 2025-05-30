@@ -26,7 +26,9 @@ function BreadcrumbCustom() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            <BreadcrumbLink className="font-medium text-secondary" href="/">
+              Home
+            </BreadcrumbLink>
           </BreadcrumbItem>
           {breadcrumbs.map((crumb, idx) => (
             <React.Fragment key={crumb.href}>
@@ -35,11 +37,14 @@ function BreadcrumbCustom() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 {idx === breadcrumbs.length - 1 ? (
-                  <BreadcrumbPage>
+                  <BreadcrumbPage className="text-primary">
                     {crumb.label.charAt(0).toUpperCase() + crumb.label.slice(1)}
                   </BreadcrumbPage>
                 ) : (
-                  <BreadcrumbLink href={crumb.href}>
+                  <BreadcrumbLink
+                    className="font-medium text-secondary"
+                    href={crumb.href}
+                  >
                     {crumb.label.charAt(0).toUpperCase() + crumb.label.slice(1)}
                   </BreadcrumbLink>
                 )}

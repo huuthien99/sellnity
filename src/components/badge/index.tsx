@@ -18,7 +18,7 @@ function BadgeCommon({
 }) {
   return (
     <Badge
-      className={`bg-[#005B86] text-white rounded-[32px] px-4 py-[13px] flex gap-2.5 cursor-pointer ${className}`}
+      className={`bg-primary text-white rounded-[32px] px-4 py-[13px] flex gap-2.5 cursor-pointer ${className}`}
       variant="outline"
       onClick={onClick}
     >

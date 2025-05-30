@@ -117,6 +117,11 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+  --color-primary: #005b86;
+  --color-secondary: #7c7c7c;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

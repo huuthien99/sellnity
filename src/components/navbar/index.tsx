@@ -48,10 +48,10 @@ export function Navbar() {
           >
             <Image src={"/logo-header.png"} alt="logo" width={48} height={48} />
             <SidebarGroupLabel className="flex flex-col items-baseline px-0 ">
-              <p className="text-[20px] font-semibold text-[#005B86]">
+              <p className="text-[20px] font-semibold text-primary">
                 ABC Company
               </p>
-              <p className="text-[14px] text-[#005B86]">Lisa Rose</p>
+              <p className="text-[14px] text-primary">Lisa Rose</p>
             </SidebarGroupLabel>
           </div>
         ) : (
@@ -72,7 +72,7 @@ export function Navbar() {
               {MenuItem.map((item) => (
                 <SidebarMenuItem className="h-10" key={item.title}>
                   <SidebarMenuButton
-                    className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-[#7C7C7C] data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-[#005B86] gap-6"
+                    className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-secondary data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-primary gap-6"
                     isActive={isActive(item.url)}
                     asChild
                   >
@@ -96,7 +96,7 @@ export function Navbar() {
             <SidebarMenu>
               <SidebarMenuItem className="h-10">
                 <SidebarMenuButton
-                  className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-[#7C7C7C] data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-[#005B86] gap-6"
+                  className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-secondary data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-primary gap-6"
                   asChild
                 >
                   <Link href={""}>
@@ -107,7 +107,7 @@ export function Navbar() {
               </SidebarMenuItem>
               <SidebarMenuItem className="h-10">
                 <SidebarMenuButton
-                  className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-[#7C7C7C] data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-[#005B86] gap-6"
+                  className="h-full group-data-[collapsible=icon]:p-2! font-medium text-[16px] text-secondary data-[active=true]:bg-[#D3D3D3] data-[active=true]:text-primary gap-6"
                   asChild
                 >
                   <Link href={""}>
