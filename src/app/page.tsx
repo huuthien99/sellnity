@@ -1,5 +1,3 @@
-import ContainerWrap from "@/components/common/ContainerWrap";
-
 export default function Home() {
-  return <ContainerWrap>Overview</ContainerWrap>;
+  return <div>Overview</div>;
 }
