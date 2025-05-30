@@ -17,7 +17,7 @@ function ContainerWrap({
 }) {
   return (
     <div className={className}>
-      <div className="flex items-center justify-between h-[52px] border-b-[#D3D3D3] border-b-[1px]">
+      <div className="flex items-center justify-between h-[52px] border-b-[#D3D3D3] border-b-[1px] pr-[19px]">
         {isShowBreadcrumbs && <BreadcrumbCustom />}
         {isShowBadge && <BadgeCommon onClick={clickBadge} />}
       </div>
