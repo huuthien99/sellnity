@@ -21,7 +21,7 @@ function Card({ card, className }: { card?: CardProps; className?: string }) {
         <p className="font-medium text-[18px]">{card?.name}</p>
         <ArrowRight />
       </div>
-      <p className="text-secondary line-clamp-2">{card?.description}</p>
+      <p className="text-secondary-app line-clamp-2">{card?.description}</p>
       <div className="flex gap-[6px]">
         <p className="size-6 bg-[#E2F5F9] border border-[#D3D3D3] flex justify-center items-center">
           <ArrowRight />
@@ -32,7 +32,7 @@ function Card({ card, className }: { card?: CardProps; className?: string }) {
       </div>
       <div className="flex justify-between items-center mt-[12px]">
         <Button
-          className="text-primary bg-[#F3F4F6] text-[16px] font-medium rounded-[8px] hover:text-primary]"
+          className="text-primary-app bg-[#F3F4F6] text-[16px] font-medium rounded-[8px] hover:text-primary-app"
           variant={"outline"}
         >
           View Detail

@@ -9,7 +9,7 @@ function LineContent({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex text-secondary gap-6">
+    <div className="flex text-secondary-app gap-6">
       <p className="w-[110px]">{title}:</p>
       <p className="flex items-center gap-2">
         <ArrowDown />

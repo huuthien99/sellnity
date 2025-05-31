@@ -26,7 +26,7 @@ function BreadcrumbCustom() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink className="font-medium text-secondary" href="/">
+            <BreadcrumbLink className="font-medium text-secondary-app" href="/">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -37,12 +37,12 @@ function BreadcrumbCustom() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 {idx === breadcrumbs.length - 1 ? (
-                  <BreadcrumbPage className="text-primary">
+                  <BreadcrumbPage className="text-primary-app">
                     {crumb.label.charAt(0).toUpperCase() + crumb.label.slice(1)}
                   </BreadcrumbPage>
                 ) : (
                   <BreadcrumbLink
-                    className="font-medium text-secondary"
+                    className="font-medium text-secondary-app"
                     href={crumb.href}
                   >
                     {crumb.label.charAt(0).toUpperCase() + crumb.label.slice(1)}
