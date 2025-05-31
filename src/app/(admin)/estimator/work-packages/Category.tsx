@@ -57,8 +57,10 @@ function Category() {
         <p
           onClick={() => handleTabChange("default")}
           className={cn(
-            "text-secondary w-[87px] text-center transition-all duration-500 ease-in-out",
-            tab === "default" ? "bg-[#E2F5F9] text-primary rounded-[4px]" : ""
+            "text-secondary-app w-[87px] text-center transition-all duration-500 ease-in-out",
+            tab === "default"
+              ? "bg-[#E2F5F9] text-primary-app rounded-[4px]"
+              : ""
           )}
         >
           RFX WPs
@@ -66,8 +68,10 @@ function Category() {
         <p
           onClick={() => handleTabChange("custom")}
           className={cn(
-            "text-secondary w-[87px] text-center transition-all duration-500 ease-in-out",
-            tab === "custom" ? "bg-[#E2F5F9] text-primary rounded-[4px]" : ""
+            "text-secondary-app w-[87px] text-center transition-all duration-500 ease-in-out",
+            tab === "custom"
+              ? "bg-[#E2F5F9] text-primary-app rounded-[4px]"
+              : ""
           )}
         >
           Custom WPs
@@ -84,8 +88,8 @@ function Category() {
             className={cn(
               "border-b-[1px] border-[#AFAFAF] cursor-pointer pb-1",
               currentCategory === category.key
-                ? "text-primary"
-                : "text-secondary"
+                ? "text-primary-app"
+                : "text-secondary-app"
             )}
             onClick={() => handleCategoryClick(category.key)}
           >

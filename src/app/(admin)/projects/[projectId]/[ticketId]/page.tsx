@@ -85,7 +85,7 @@ function TicketDetailPage() {
             title="Description"
           >
             <Content icon={<Circle />}>
-              <p className="text-secondary leading-[22px]">
+              <p className="text-secondary-app leading-[22px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -96,7 +96,7 @@ function TicketDetailPage() {
               </p>
             </Content>
             <Content icon={<Circle />}>
-              <p className="text-secondary leading-[22px]">
+              <p className="text-secondary-app leading-[22px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -106,8 +106,8 @@ function TicketDetailPage() {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </Content>
-            <Content icon="+" className="[&>span:first-child]:text-primary">
-              <p className="text-primary cursor-pointer">Add sub-tickets</p>
+            <Content icon="+" className="[&>span:first-child]:text-primary-app">
+              <p className="text-primary-app cursor-pointer">Add sub-tickets</p>
             </Content>
           </BoxContent>
           <BoxContent icon={<Ebook />} className="mb-[43px]" title="Activity">
